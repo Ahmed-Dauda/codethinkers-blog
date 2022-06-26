@@ -134,3 +134,8 @@ MEDIA_URL = '/media/'
 #]
 LOGIN_REDIRECT_URL = 'home'
 LOGIN_URL = 'login'
+
+# Simplified static file serving.
+# https://pypi.org/project/whitenoise/
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
